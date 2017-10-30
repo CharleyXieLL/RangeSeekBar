@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    tools:context="com.jaygoo.demo.MainActivity">
+
+
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:markTextArray="@array/markArray"
+        app:lineColorSelected="@color/colorAccent"
+        app:thumbResId="@drawable/seekbar_thumb"
+        app:lineColorEdge="@color/colorSeekText"
+        app:textColor="@color/colorSeekBarDefault"
+        app:cellMode="number"
+        app:seekBarMode="single"
+        />
+
+
+    <TextView
+        android:id="@+id/progress2_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:markTextArray="@array/markArray2"
+        app:lineColorSelected="@color/colorAccent"
+        app:lineColorEdge="@color/colorSeekText"
+        app:textColor="@color/colorSeekBarDefault"
+        app:textPadding="17dp"
+        app:min="1"
+        app:max="9"
+        app:thumbPrimaryColor="@color/colorSeekBarDefault"
+        app:thumbSecondaryColor="@android:color/white"
+        app:seekBarHeight="4dp"
+        app:thumbSize="20dp"
+        app:cellMode="number"
+        app:seekBarMode="range"
+        app:progressHintMode="alwaysShow"
+        />
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seekbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:markTextArray="@array/negativeMarkArray"
+        app:lineColorSelected="@color/colorAccent"
+        app:lineColorEdge="@color/colorSeekText"
+        app:textColor="@color/colorSeekBarDefault"
+        app:textPadding="17dp"
+        app:textSize="16sp"
+        app:min="350"
+        app:max="950"
+        app:hintBGHeight="50dp"
+        app:seekBarHeight="2dp"
+        app:hintBGWith="60dp"
+        app:thumbSize="20dp"
+        app:cellMode="other"
+        app:seekBarMode="range"
+        app:cells="60"
+        />
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seekbar4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:markTextArray="@array/wordsArray"
+        app:lineColorSelected="@color/colorPrimary"
+        app:lineColorEdge="@color/colorSeekText"
+        app:textColor="@color/colorSeekBarDefault"
+        app:textPadding="17dp"
+        app:cells="4"
+        app:progressHintMode="alwaysHide"
+        app:textSize="12sp"
+        app:hintBGHeight="28dp"
+        app:seekBarHeight="8dp"
+        app:thumbSize="26dp"
+        app:cellMode="other"
+        app:seekBarMode="single"
+        />
+
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="#626262"/>
+
+</LinearLayout>
